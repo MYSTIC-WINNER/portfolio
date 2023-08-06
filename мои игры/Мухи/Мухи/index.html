@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<title>Спаси пупи</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/main.js" defer></script>
+</head>
+<body>
+<h1>Спаси пупи</h1>
+
+<!-- Стартовый экран -->
+<div id="start">
+<ol>Выберите карту
+<li><img  src="img/fon1.jpg" class="preview" alt="простая"></li>
+<li><img  src="img/fon2.jpg" class="preview" alt="средняя"></li>
+<li><img  src="img/fon3.jpg" class="preview" alt="сложная"></li>
+<li><img  src="img/fon4.jpg" class="preview" alt="очень сложная"></li>
+</ol>
+<form id="registration">
+Ваше имя:
+<input type="text" id="name" required>
+<input type="button" id="go" value="Старт игры" disabled>
+</form>
+</div>
+
+<!-- Игровой экран -->
+<div id="play">
+
+<div id="info">
+<div>
+<span class="description">Пользователь</span>
+<span class="information" id="user">имя</span>
+</div>
+<div>
+<span class="description">Время старта</span>
+<span class="information" id="starttime"></span>
+</div>
+<div>
+<span class="description">Время жизни</span>
+<span class="information" id="min">00</span>:<span class="information" id="sec">00</span>
+</div>
+<div>
+<span class="description">Количество жизней</span>
+<span class="information" id="hits">5</span>
+</div>
+<div><span id="pause">Игра&nbsp;</span>
+</div>
+</div>
+
+<div id="game">
+<div id="player"></div>
+<div id="exit"></div>
+</div>
+
+</div>
+
+<!-- Экран результатов -->
+<div id="result">
+<div>
+<span class="description">Пользователь</span>
+<span class="information" id="ruser">имя</span>
+</div>
+<div>
+<span class="description">Время жизни</span>
+<span class="information" id="rlivetime"></span>
+</div>
+<div>
+<span class="description">Столкновений с монстрами</span>
+<span class="information" id="countfoys"></span>
+</div>
+<div>
+<span class="description">Столкновений с ловушками</span>
+<span class="information" id="counttraps"></span>
+</div>
+<div>
+<span class="description">Осталось жизней</span>
+<span class="information" id="counthits"></span>
+</div>
+<form id="return">
+<input type="button" id="go" value="Играть снова">
+</form>
+</div>
+</body>
+</html>
