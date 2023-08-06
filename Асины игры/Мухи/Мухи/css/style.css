@@ -1,0 +1,102 @@
+@font-face{
+	font-family: "Monserrat Black";
+	src: url('../font/Montserrat-B.ttf');
+}
+@font-face{
+	font-family: "Monserrat";
+	src: url('../font/Montserrat-I.ttf');
+}
+@font-face{
+	font-family: "Monserrat Medium";
+	src: url('../font/Montserrat-M.ttf');
+}
+body{
+	background: rgb(125, 117, 108);
+	color: white;
+	font-family: "Monserrat Medium";
+	font-size: 18pt;
+}
+h1 {
+	font-family: "Monserrat Black";
+	font-size: 48pt;
+	text-align: center;
+}
+
+#start {
+	display: block;
+}
+.preview {
+	height: 50px;
+	width: 100px;
+	cursor: pointer;
+}
+#registration {
+	display: none;
+}
+
+#play{
+	display: none;
+}
+#info {
+	display: flex;
+	justify-content: space-around;
+}
+.description {
+	font-family: "Monserrat";
+	font-style: italic;
+}
+.information {
+	font-family: "Monserrat Medium";
+}
+
+#game {
+	border:  solid 5px white;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../img/fon1.jpg");
+	width: 800px;
+	height: 550px;
+	margin: auto;
+	text-align: center;
+}
+
+#player {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-image: url("../img/player.png");
+}
+
+.trap {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 50%;
+	opacity: 30%;
+}
+
+.foy {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+}
+
+#exit {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	background-image: url("../img/exit.png");
+}
+
+#result {
+	display: none;
+	position: relative;
+	left: 400px;
+}
+
+

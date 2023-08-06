@@ -1,0 +1,91 @@
+@font-face{
+	font-family: "Monserrat Black";
+	src: url('../font/Montserrat-B.ttf');
+}
+@font-face{
+	font-family: "Monserrat";
+	src: url('../font/Montserrat-I.ttf');
+}
+@font-face{
+	font-family: "Monserrat Medium";
+	src: url('../font/Montserrat-M.ttf');
+}
+body{
+	background: rgb(31, 31, 53);
+	color: white;
+	font-family: "Monserrat Medium";
+	font-size: 18pt;
+}
+h1 {
+	font-family: "Monserrat Black";
+	font-size: 48pt;
+	text-align: center;
+}
+
+#start {
+	display: block;
+}
+.preview {
+	height: 50px;
+	width: 100px;
+	cursor: pointer;
+}
+#registration {
+	display: none;
+}
+
+#play{
+	display: none;
+}
+#info {
+	display: flex;
+	justify-content: space-around;
+}
+.description {
+	font-family: "Monserrat";
+	font-style: italic;
+}
+.information {
+	font-family: "Monserrat Medium";
+}
+
+#game {
+	position: relative;
+	border:  solid 5px white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../img/kosmos1.jpg");
+	width: 95%;
+	height: 550px;
+	margin: auto;
+	text-align: center;
+}
+
+#ship {
+	position: absolute;
+	width: 100px;
+	height: 150px;
+	background-image: url("../img/ship1.png");
+}
+
+#star {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/star1.png");
+}
+
+#meteo {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/meteor1.png");
+}
+
+#result {
+	display: none;
+	position: relative;
+	left: 400px;
+}
+
+
